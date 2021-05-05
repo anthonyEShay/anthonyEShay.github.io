@@ -1,51 +1,348 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
+<html lang="en">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Resume</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+  <title>Online Portfolio</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
 
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+<style>
+.siteButton a {
+display: inline-block;
+background: #1b8abdc2;
+color: #fff;
+padding: 7px 25px;
+transition: 0.3s;
+font-size: 14px;
+border-radius: 4px;
+}
+
+.siteButton a:hover {
+background: #1ed33c;
+}
+</style>
 </head>
-    
+
 <body>
-    
-<div id="page" class="container">
-	<div id="header">
-		<div id="logo">
-			<img src="images/pic02.jpg" alt="" />
-			<h1><a href="#">Anthony Shay<br>Web Portfolio</a></h1>
-		</div>
-		<div id="menu">
-			<ul>
-				<li class="current_page_item"><a href="#" accesskey="1" title="">Home</a></li>
-				<!--<li><a href="aboutMe.html" accesskey="2" title="">About Me</a></li>-->
-				<li><a href="resume.html" accesskey="3" title="">Resume</a></li>
-				<li><a href="projects.html" accesskey="4" title="">Projects</a></li>
-                <!--<li><a href="feedback.html" accesskey="5" title"">Feedback</a></li>-->
-			</ul>
-		</div>
-	</div>
-	<div id="main">
-		<div id="banner">
-			<!-- <img src="images/pic01.jpg" alt="" class="image-full" /> -->
-		</div>
-		<div id="welcome">
-			<div class="title">
-				<h2>Home</h2>
-			</div>
-		</div>
-		<div id="bodyText">
-            <h3>About the Website</h3>
-			<p>This website is designed to showcase some exciting projects I have worked on in my journey to become a skilled programmer. These projects demonstrate my coding abilities in Python, JavaScript, Html/Css, and my ability to apply concepts such as sorting, searching, and multithreading to the programs I write. This portfolio website is static and built entirely with Html, Css, and JavaScript. The intent was to build a site that has an easy to understand and grasp layout, allows for a smooth and responsive user experience, and loads quickly. The website is easily navigated with the menu on the left side. The resume page includes an easy to view html resume that can be downloaded as a pdf . The projects page includes several projects, some of which are web based and can be tried from this site.</p>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html"><span style="color:#1b8abdc2">Anthony</span>&emsp;Shay</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+
+          <li><a href="#about-the-site">About the Website</a></li>
+
+          <li><a href="#about-me">About Me</a></li>
+
+          <li class="drop-down"><a href="portfolio-main.html">Portfolio Projects</a>
+            <ul>
+              <li><a href="portfolio-main.html">Portfolio Overview</a></li>
+              <li><a href="Project-Details/djangoWebsite.html">Full Stack Django Website</a></li>
+              <li><a href="Project-Details/OnlineSortingVisualizer.html">Online Sorting Visualizer</a></li>
+              <li><a href="Project-Details/PathingVisualizer.html">Online Pathing Algorithm Visualizer</a></li>
+              <li><a href="Project-Details/sudoku.html">Sudoku Solver</a></li>
+              <li><a href="Project-Details/slideShow.html">Python Slide Show</a></li>
+            </ul>
+          </li>
+
+          <li class="drop-down"><a href="resume.html">Resume</a>
+            <ul>
+              <li><a href="resume.html">Online Resume</a></li>
+              <li><a href="AnthonyShay Resume 1.pdf" target="_blank">Resume PDF</a></li>
+            </ul>
+          </li>
+          <!--
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          -->
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <div class="header-social-links">
+        <a href="https://github.com/anthonyEShay?tab=repositories" class="github" target="_blank"><i class="icofont-github"></i></a> <!--<img src="assets/img/github-logo.png">-->
+        <a href="https://www.linkedin.com/in/anthony-shay-1b511016b" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/intro.jpg);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Welcome to My Personal Portfolio Website</h2>
+              <p>Please use the navagation links to view the various pages in my online portfolio. The code for this website is available through my github.</p>
+              <div class="text-center"><a href="https://github.com/anthonyEShay/anthonyEShay.github.io" target="_blank" class="btn-get-started">See the Code</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/img/coding-background.jpg);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>View My Portfolio Projects</h2>
+              <p>I have compiled several personal projects into this online portfolio. A quick view of these projects is available below. The main portfolio overview 
+                page can be reached via the navigation bar above or the button below.
+              </p>
+              <div class="text-center"><a href="portfolio-main.html" class="btn-get-started">Go to Projects</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/img/stack-files.jpg);">
+          <div class="carousel-container">
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>View My Online Resume and Download the PDF Version</h2>
+              <p>My resume is available to view in both an easy to view online version and a PDF document. Click the button below to be taken to the main 
+                resume page.
+              </p>
+              <div class="text-center"><a href="resume.html" class="btn-get-started">Go to Resume</a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-the-site" class="about-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About the Website</strong></h2>
+        </div>
+
+        <div class="row content">
+          <div  data-aos="fade-up">
+            <p>
+              This website is designed to showcase some exciting projects I have worked on in my journey to become a skilled programmer. These projects 
+              demonstrate my coding abilities in Python, JavaScript, Html/Css, and my ability to apply concepts such as sorting, searching, and multithreading 
+              to the programs I write. This online portfolio website is static and built with Html, Css, and JavaScript. The intent was to build a site that 
+              has an easy to understand professional layout that allows for a smooth and responsive user experience. The website can be easily navigated 
+              with the menu above. The resume page includes an easy to view html resume that can be downloaded as a pdf. The projects page includes 
+              several projects, some of which are web based and can be tried from this site. The code used to create this site can be found on my github
+              page. Click the button below to go there.
+            </p>
+            <div class="siteButton text-center"> 
+              <a href="https://github.com/anthonyEShay/anthonyEShay.github.io" target="_blank">See The Code</a>
+            </div>
             
-            <h3>About Me</h3>
-            <p>My passions are programming and advancing the capacities of artificial intelligence. I am particularly interested in systems programming, algorithms, and multi-threading applications. I am looking for an opportunity to use  my skills  in an innovative and cutting edge company that embraces  the latest technologies and seeks  to create unique and world changing applications. Now more than ever, I think we can improve the world by harnessing the promise of AI.</p>
-		</div>
-	</div>
-</div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <section id="about-me" class="about-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Me</strong></h2>
+        </div>
+
+        <div class="row content">
+          <div data-aos="fade-up">
+            <p>
+              My passions are programming and advancing the capacities of artificial intelligence. I am particularly interested in systems programming, algorithms, 
+              and multi-threading applications. I am looking for an opportunity to use my skills in an innovative and cutting edge company that embraces the latest 
+              technologies and seeks to create unique and world changing applications. Now more than ever, I think we can improve the world by harnessing the promise 
+              of machine learning.
+            </p>
+            
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="portfolio-view" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio Quick View</strong></h2>
+          <p>Click on any of the containters below to be brought to their respective project details page.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <a href="Project-Details/djangoWebsite.html" style="color: #111;">
+            <div class="icon-box">
+              <div>
+                <img src="assets/img/django1.jpg" style="max-height: 150px; max-width: 100%;">
+              </div>
+              <h4>Full Stack Website</h4>
+              <p>A full stack database website with user functionality built with Django</p>
+            </div>
+          </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <a href="Project-Details/OnlineSortingVisualizer.html" style="color: #111;">
+            <div class="icon-box">
+              <div>
+                <img src="assets/img/sortingProgram.png" style="max-height: 150px; max-width: 100%;">
+              </div>
+              <h4>Online Sorting Visualizer</h4>
+              <p>A JavaScript application that teaches about sorting algorithms</p>
+            </div>
+          </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <a href="Project-Details/PathingVisualizer.html" style="color: #111;">
+              <div class="icon-box">
+                <div>
+                  <img src="assets/img/pathingProgram.png" style="max-height: 150px; max-width: 100%;">
+                </div>
+                <h4>Online Pathing Visualizer</h4>
+                <p>A JavaScript application that teaches about pathing algorithms</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <a href="Project-Details/sudoku.html" style="color: #111;">
+              <div class="icon-box">
+                <div>
+                  <img src="assets/img/pySudoku.jpg" style="max-height: 150px; max-width: 100%;">
+                </div>
+                <h4>Sudoku Solver</h4>
+                <p>A theoretical python application that solves Sudoku puzzles</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <a href="Project-Details/slideShow.html" style="color: #111;">
+              <div class="icon-box">
+                <div>
+                  <img src="assets/img/pySlideShow.jpg" style="max-height: 150px; max-width: 100%;">
+                </div>
+                <h4>Python Slide Show</h4>
+                <p>A simple python application that creates a slide show</p>
+              </div>
+            </a>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Anthony Shay</h3>
+            <p>
+              Hayward, CA 94544<br>
+              United States <br><br>
+              <!--<strong>Phone:</strong><br>-->
+              <strong>Email:</strong> anthonyeshay@aol.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about-the-site">About the Website</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="portfolio-main.html">Portfolio Projects</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="resume.html">Resume</a></li>
+              
+            </ul>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </div>
+
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>

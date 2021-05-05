@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Online Portfolio</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <script src="sortGame.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="../index.html"><span style="color:#1b8abdc2">Anthony</span>&emsp;Shay</a></h1>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+
+          <li><a href="../index.html#about-the-site">About the Website</a></li>
+
+          <li><a href="../index.html#about-me">About Me</a></li>
+
+          <li class="drop-down active"><a href="../portfolio-main.html">Portfolio Projects</a>
+            <ul>
+              <li><a href="../portfolio-main.html">Portfolio Overview</a></li>
+              <li><a href="djangoWebsite.html">Full Stack Django Website</a></li>
+              <li><a href="#">Online Sorting Visualizer</a></li>
+              <li><a href="PathingVisualizer.html">Online Pathing Algorithm Visualizer</a></li>
+              <li><a href="sudoku.html">Sudoku Solver</a></li>
+              <li><a href="slideShow.html">Python Slide Show</a></li>
+            </ul>
+          </li>
+
+          <li class="drop-down"><a href="../resume.html">Resume</a>
+            <ul>
+              <li><a href="../resume.html">Online Resume</a></li>
+              <li><a href="../AnthonyShay Resume 1.pdf" target="_blank">Resume PDF</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <div class="header-social-links">
+        <a href="https://github.com/anthonyEShay?tab=repositories" class="github" target="_blank"><i class="icofont-github"></i></a> <!--<img src="assets/img/github-logo.png">-->
+        <a href="https://www.linkedin.com/in/anthony-shay-1b511016b" class="linkedin" target="_blank"><i class="icofont-linkedin"></i></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Online Sorting Visualizer</h2>
+          <ol>
+            <li><a href="../portfolio-main.html">Portfolio Overview</a></li>
+            <li>Project Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container" data-aos="fade-up">
+        
+
+        <div class="portfolio-description">
+          <h2>About the Sorting Program</h2>
+          <p>This web based program is created entirely with Html and JavaScript. It was designed to teach students new to algorithms about some of the most common ways to 
+            sort in computer science. The program is able to do this by providing a visual reference of the data being worked on as well as a red box signifying where 
+            actions are currently taking place. Each type of sort a user can choose has a short description about the algorithm and gives some details as to how the algorithm 
+            works behind the scene to sort a given set of data.</p>
+                      
+          <p>The program visualizes data elements with randomly sized bars. These bars are then sorted by height from shortest to tallest. Each sorting algorithm has been 
+            broken down to it’s most basic step so that the data can be processed through the algorithm one iteration at a time. Some of the algorithms, like merge sort, 
+            were not designed to be an in place algorithm as shown in the picture representation. So, some slight changes needed to be made to the classic algorithm in order 
+            to make it work with the parameters the program has.</p>
+
+            <p>See the Code:&ensp;<a href="https://github.com/anthonyEShay/webSorter" target="_blank"><img height= "40px" src="../assets/img/github-logo.png"></a></p>
+                      
+          <div id="page" class="container">
+            
+            <div id="main">
+              
+              <div id="bodyText">
+                      <h3></h3>
+                      
+                      <div id="sortText"></div>
+                      <div style="float: left; width: 20%">Sort Type: <select name="sortType" id="sortT">
+                          <option value="selection">Selection Sort</option>
+                          <option value="bubble">Bubble Sort</option>
+                          <option value="insertion">Insertion Sort</option>
+                          <option value="heap">Heapsort</option>
+                          <option value="quick">Quicksort</option>
+                          <option value="merge">Mergesort</option>
+                          </select>
+                      </div>
+                      <div style="float: left; width: 55%;">
+                          <div style="float: left">Visual Sort Speed:&emsp;</div> <div id="sortValue" style="width: 25px; float: left"></div>&emsp;&emsp;&emsp;&emsp;<span ><button id="spButton" type="button" onclick="changeSkip()">x1</button></span>
+                          <input type="range" style="width: 100%" min="1" max="100" value="4" id="sortSpeed">
+                          <br>Visual Sort Density: <span id="densValue"></span>
+                          <input type="range" style="width: 100%" min="10" max="150" value="10" id="sortDens">
+                      </div>
+                      <div style="float: right; width: 20%">
+                          <button type="button" onclick="startButton()">Begin</button>&emsp;&emsp;
+                          <button type="button" onclick="cancelFun()">Stop</button>
+                      </div>
+                      <div style="display: inline-block; width: 2000px;"><br></div>
+                      <span id="test">Steps taken:</span><span id="test2"></span><span id="test3"></span>
+                <div id="gameBox"></div>
+                      
+                      
+              </div>
+            </div>
+          </div>
+              <script>
+                  changeTimer(250);
+                  startGame(10, "selection");
+                  var sortSlide = document.getElementById("sortSpeed");
+                  var denSlide = document.getElementById("sortDens");
+                  var sortType = document.getElementById("sortT");
+                  document.getElementById("sortValue").innerHTML = sortSlide.value;
+                  document.getElementById("densValue").innerHTML = denSlide.value;
+                  
+                  sortSlide.oninput = function() {
+                      document.getElementById("sortValue").innerHTML = this.value;
+                      tempSpeed = document.getElementById("sortSpeed").value;
+                      tempSpeed = Math.round(1000/tempSpeed);
+                      changeTimer(tempSpeed);
+                  }
+                  denSlide.oninput = function(){
+                      document.getElementById("densValue").innerHTML = this.value;
+                  }
+                  sortType.oninput = function(){
+                      sortName = document.getElementById("sortT").value;
+                      switch (sortName){
+                          case 'selection':
+                              document.getElementById("sortText").innerHTML = selectionSortString;
+                              break;
+                          case 'bubble':
+                              document.getElementById("sortText").innerHTML = bubbleSortString;
+                              break;
+                          case 'insertion':
+                              document.getElementById("sortText").innerHTML = insertionSortString;
+                              break;
+                          case 'heap':
+                              document.getElementById("sortText").innerHTML = heapSortString;
+                              break;
+                          case 'quick':
+                              document.getElementById("sortText").innerHTML = quickSortString;
+                              break;
+                          case 'merge':
+                              document.getElementById("sortText").innerHTML = mergeSortString;
+                              break;
+                      }
+                  }
+                  
+                  function startButton(){
+                      tempDens = document.getElementById("sortDens").value;
+                      startGame(tempDens, document.getElementById("sortT").value);
+                  }
+                  function changeSkip(){
+                      skipOrder = [1, 2, 4, 6];
+                      curValue = document.getElementById("spButton").innerHTML;
+                      curValue = curValue.substr(1);
+                      temp = skipOrder.indexOf(parseInt(curValue)) + 1;
+                      temp = temp == skipOrder.length ? 0 : temp;
+                      skipSpeed = skipOrder[temp]
+                      document.getElementById("spButton").innerHTML = "x" + skipOrder[temp];
+                  }
+                  
+                  selectionSortString = "<h3>Selection Sort</h3><p>Selection sort is a standard O(n<sup>2</sup>) sorting algorithm. It functions by dividing the data into two parts: a sorted section and an unsorted section. This algorithm can easily be done in place by having the sorted section be placed at the beginning of the data. The sorted section is built up one element at a time by scanning through the entirety of the unsorted section and finding the smallest element. That smallest element is then added to the end of the sorted section. When there are no longer any elements in the unsorted section the data has been sorted.</p>"
+                  
+                  bubbleSortString = "<h3>Bubble Sort</h3><p>Bubble sort is a very simple to implement  O(n<sup>2</sup>) sorting algorithm. The algorithm simply repeatedly travels through the data set keeping track of an element n and its neighbor n+1. If the neighbor is smaller than the current element the algorithm switches them. It continues to do this until no more switching needs to take place signifying a sorted list.</p><br>"
+                  
+                  insertionSortString = "<h3>Insertion sort</h3><p>Insertion sort is another O(n<sup>2</sup>) sorting algorithm but it tends to perform better than most other O(n<sup>2</sup>) algorithms like selection and bubble sort. This is in part due to its efficiency with data sets that begin substantially sorted. The algorithm works like selection sort in that it divides the data up into a sorted and unsorted section. For every element in the unsorted section the algorithm goes through the sorted data to find where the element belongs and then places it in the correct section. In substantially sorted data the algorithm will often be able to simply place that element at one of the ends of the sorted section and not have to traverse into the data to find a correct position.</p>"
+                  
+                  heapSortString = "<h3>Heap Sort</h3><p>Heapsort is an efficient O(n log n) sorting algorithm that makes use of special data structure known as a  heap in order to dramatically improve its performance. In functions similarly to selection sort in that it separates the data into a sorted and unsorted section. The differences end their because heapsort then transforms the unsorted section into a heap data structure. The heap structure is designed so that it will always have either the highest or lowest value element at the top of the structure. This means, unlike in selection sort, the algorithm no longer needs to iterate through the entirety of the unsorted section to find the next element to sort.</p>"
+                  
+                  quickSortString = "<h3>Quick Sort</h3><p>Quicksort is an efficient O(n log n) sorting algorithm that utilizes a divide-and-conquer style strategy to effectively split the data into smaller more manageable sections. The algorithm works by repeatedly choosing an element to work around. The algorithm goes through its current working section and moves all elements less in size to one side and all those greater to the other side. The algorithm then divides up both sides into smaller subsections that then each have a new pivot chosen and are then sorted in the same way.</p>"
+                  
+                  mergeSortString = "<h3>Merge Sort</h3><p>Merge sort is an efficient O(n log n) sorting algorithm that, like quicksort, utilizes a divide-and-conquer style strategy to effectively split the data into smaller more manageable sections. The algorithm first divides up the data into smaller and smaller sections until each section is only 1 element large. The algorithm then begins to merge these sections together two at a time and in order. So, every two sections will be merged into one larger sorted section. This continues until the last two sections remaining are merged back into the full data set.</p>"
+                  
+                  document.getElementById("sortText").innerHTML = selectionSortString;
+              </script>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Anthony Shay</h3>
+            <p>
+              Hayward, CA 94544<br>
+              United States <br><br>
+              <!--<strong>Phone:</strong><br>-->
+              <strong>Email:</strong> anthonyeshay@aol.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="../index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../index.html#about-the-site">About the Website</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../portfolio-main.html">Portfolio Projects</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../resume.html">Resume</a></li>
+              
+            </ul>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </div>
+
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
